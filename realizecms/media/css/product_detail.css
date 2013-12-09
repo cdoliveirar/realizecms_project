@@ -1,0 +1,70 @@
+body {background-color:#cccccc; font-size:76%; font-family:"trebuchet MS", verdana, arial, sans-serif; background:#ECECE9; word-wrap:break-word;}
+
+/*#header {background:#ffffff;}*/
+
+#content {
+    margin: 0 auto 45px;
+    padding: 30px 0 186px;
+    position: relative;
+    width: 960px;
+    
+}
+
+#header {
+	background-color: #fff;
+	height: 102px;
+	position: relative;
+	width: 100%;
+    height: 50px
+}
+
+#logo {
+    bottom: 0;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 200px;
+    height: 100px;
+}
+
+#menu {
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+#carrousel{
+	background-color: #fff;
+    /*width: 65%;
+    margin-left: 150px;*/
+    width: 960px;
+    height: 415px;
+    margin-left: 0px;
+
+}
+
+
+
+#outer1 {float:left; width:0%; background:#ffffff;}
+#outer2 {float:left; width:80%; background:#ffffff;}
+#outer3 {float:right; width:20%; background:#ffffff; }
+/*#outer1, #outer2, #outer3 {padding-bottom:32767px; margin-bottom:-32767px;} */
+
+/*#wrapper {overflow:hidden; background:#c0c0c0;}*/
+#wrapper {
+	margin: 0 auto 45px;
+    padding: 45px 0 186px;
+    position: relative;
+    width: 900px;
+}
+
+
+#footer {clear:both; background:#455c5a;}
+
+h1 {font-size:20px; margin:0; padding:10px 0; color:#fff;}
+h3 {font-size:18px; margin:0; padding:8px 0;}
+.content {padding:10px;}
+p {font-size:12px; line-height:1.5em; margin:0; padding:5px 0;}
+#footer p,
+#header p {color:#000;}
+#footer a {color:#000;}
+#footer a:hover {text-decoration:none;}

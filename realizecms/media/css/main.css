@@ -1,0 +1,142 @@
+body {
+    
+    font-family:"arial"; 
+    /*background:#ECECE9; */
+    /*background-color:#cccccc; */
+    background-image: url(../img/sandpaper.png);
+    background-repeat:repeat;
+
+      
+}
+
+/*#header {background:#ffffff;}*/
+
+#content {
+    background-color: #ffffff;
+    margin: 0 auto 45px;
+    padding: 0px 0 50px;
+    position: relative;
+    width: 960px;
+    /*box-shadow: 10px 10px 5px #888888; */
+    /*box-shadow: 0px -10px 10px -10px #888888; */
+
+
+    -moz-box-shadow: 0px 10px 12px 0px #000,
+                    0px -10px 12px 0px #000;
+    -webkit-box-shadow: 0px 10px 12px 0px #000,
+                    0px -10px 12px 0px #000;
+    box-shadow: 0px 10px 12px 0px #000,
+                0px -10px 12px 0px #000;
+    
+}
+
+#header {
+    position: relative;
+	background-color: #fff;
+	height: 100px;
+	width: 100%;
+    
+}
+
+#logo {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100px;
+}
+
+#menu {
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 5px;
+
+    
+}
+
+#social-media-icons {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 650px;
+}
+
+
+#carrousel{
+    position: static;
+	background-color: #fff;
+    /*width: 65%;
+    margin-left: 150px;*/
+    width: 960px;
+    height: 417px;
+
+    border-width: 1px; 
+    border-style: solid;
+    border-color: #ccc;
+    
+    
+
+}
+
+#wrapper {
+    position: static;
+    /*margin: 0 auto 45px;
+    padding: 45px 0 186px;*/
+    width: 900px;
+}
+
+
+#outer1 {float:left; width:30%; background:#ffffff;}
+#outer2 {float:left; width:40%; background:#ffffff;}
+#outer3 {float:right; width:30%; background:#ffffff; }
+/* #outer1, #outer2, #outer3 {padding-bottom:32767px; margin-bottom:-32767px;} */
+
+/*#wrapper {overflow:hidden; background:#c0c0c0;}*/
+
+
+#footer { 
+    position: static; 
+    clear:both; 
+    background:#ffffff;
+    height: 120px;
+    font-size:12px;
+}
+
+h1 {font-size:20px; margin:0; padding:10px 0; color:#fff;}
+h3 {font-size:18px; margin:0; padding:8px 0;}
+.content {padding:10px;}
+p {font-size:12px; line-height:1.5em; margin:0; padding:5px 0;}
+#footer p,
+#header p {color:#000;}
+#footer a {color:#000;}
+#footer a:hover {text-decoration:none;}
+
+
+#menu-footer {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 280px;
+    color: #EEEEEE;
+
+}
+
+#nav-list li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+#autodesk-imgs{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+
+#address-footer{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 680px;
+
+
+}
