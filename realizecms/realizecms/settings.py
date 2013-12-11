@@ -193,6 +193,7 @@ CMS_TEMPLATES = (
     ('template_courses_detail.html', 'Template Courses Detail'),
     ('template_product.html', 'Template Product'),
     ('template_product_detail.html', 'Template Product Detail'),
+    ('base_contato.html', 'Template Contato'),
 
 )
 

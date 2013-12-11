@@ -1,14 +1,16 @@
-div.menu {text-align:center; position:relative; z-index:100; margin:20px 0 200px 0;}
+div.menu {text-align:center; position:relative; z-index:100; margin:20px 0 200px 0; border:1px solid #cccccc; background-color: #f3f3f3}
 div.menu dl {padding:0; margin:0; display:inline-block; position:relative; text-align:left;}
-div.menu dl a {display:block; white-space:nowrap; font: 15px/35px 'Federant', arial, sans-serif; text-decoration:none; color:#fff; padding:0 20px;}
+/*color letter*/
+div.menu dl a {display:block; white-space:nowrap; font: 15px/35px 'Federant', arial, sans-serif; text-decoration:none; color:#828282; padding:0 20px;}
 div.menu dl {*display:inline;}
-div.menu dt {height:35px; line-height:35px; background:#09c; border-radius:8px 8px 0 0; margin-right:1px; border-bottom:1px solid #fff;}
-div.menu dd {position:absolute; left:0; top:36px; padding:0; margin:0; display:none; background:#069; border-radius:0 0 8px 8px; padding:8px 0; box-shadow:0 15px 10px -15px rgba(0,0,0,0.4);}
+div.menu dt {height:35px; line-height:35px; background:#f3f3f3; border-radius:8px 8px 0 0; margin-right:1px; border-bottom:1px solid #fff;}
+div.menu dd {position:absolute; left:0; top:36px; padding:0; margin:0; display:none; background:#f3f3f3; border-radius:0 0 8px 8px; padding:8px 0; box-shadow:0 15px 10px -15px rgba(0,0,0,0.4);}
 div.menu dd a {line-height:25px;}
 div.menu dl.right dd {left:auto; right:1px;}
 div.menu dl:hover dd {display:block;}
-div.menu dl:hover dt {background:#069;}
-div.menu dl:hover dt.sub {border-bottom-color:#069;}
-div.menu dl dd a:hover {background:#09c;}
+div.menu dl:hover dt {background:#ccc;}
+div.menu dl:hover dt.sub {border-bottom-color:#ccc;}
+div.menu dl dd a:hover {background:#ccc; color: #A4111F;}
+div.menu dl dt a:hover {color: #A4111F;}
 div.menu img {position:fixed; z-index:-1; left:0; top:0; width:100%; height:100%; display:none;}
 div.menu dl:hover ~ img {display:block;}

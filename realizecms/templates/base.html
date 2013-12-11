@@ -35,23 +35,20 @@
 
 <body>
     {% cms_toolbar %}
-      
     {% placeholder content %}
-
-    {% block content %}
+	{% block content %}
 
 	<div id="content">
 
 		<div id="header">
-			
-			<div id="logo">
+			<div id = "logo">
 				{% placeholder "LogoCabecera" or %} There is no content. {% endplaceholder %}
 			</div> <!-- end div logo -->
 			<div id = "menu">
 				{% show_menu 0 100 100 100 "menu.html" %}
 			</div>
 
-			<div id="social-media-icons">
+			<div id = "social-media-icons">
 				<a class="social-slide-twitter" href="https://www.twitter.com"></a>
 				<a class="social-slide-linkedin" href="https://www.linkedin.com"></a>
 				<a class="social-slide-facebook" href="https://www.facebook.com"></a>
@@ -105,22 +102,23 @@
 		</div> <!-- end wrapper -->
 
 		<div id="footer">
+	
 			<div id= "menu-footer">
 				<ul id="nav-list">
 					<li><a href="/empresa">Empresa</a></li>
 					<li><a href="/cursos">Cursos</a></li>
 					<li><a href="/produto">Software</a></li>
-					<li><a href="/produto">Agenda</a></li>
-					<li><a href="/none">Fale conosco</a></li>
+					<li><a href="/agenda">Agenda</a></li>
+					<li><a href="/contact">Fale conosco</a></li>
 				</ul>
 			</div>
 			
 			<div id= "autodesk-imgs">
 				{% placeholder "footer" or %} There is no content. {% endplaceholder %}
+				
+				
 			</div>
-			
-
-
+	
 			<div id = "address-footer">
 				<address>
   				<strong>Deskgraphics</strong><br>
@@ -129,27 +127,23 @@
   				<abbr title="Phone">P:</abbr> (21) 2526-8585
 				</address>
 			</div>
-			
-			
+		
 		</div> <!-- end footer -->
 
 	</div> <!--end content -->
     	
 
     {% endblock %}
-
-   
-    
-		{% addtoblock "js" %}
-			<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.js"></script>
-		{% endaddtoblock %}		
-		{% addtoblock "js" %}
-			<script type="text/javascript" src="{{ MEDIA_URL }}js/carousel.js"></script>
-		{% endaddtoblock %}
-		{% addtoblock "js" %}
-			<script type="text/javascript" src="{{ MEDIA_URL }}js/bootstrap.js"></script>
-		{% endaddtoblock %}
-		{% render_block "js" %}
+	{% addtoblock "js" %}
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.js"></script>
+	{% endaddtoblock %}		
+	{% addtoblock "js" %}
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/carousel.js"></script>
+	{% endaddtoblock %}
+	{% addtoblock "js" %}
+	<script type="text/javascript" src="{{ MEDIA_URL }}js/bootstrap.js"></script>
+	{% endaddtoblock %}
+	{% render_block "js" %}
      
    </body>
 </html>

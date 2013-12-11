@@ -16,6 +16,10 @@
 	{% endaddtoblock %}
 	
 	{% addtoblock "css" %}
+		<link href="/media/css/social.css" media="screen" rel="stylesheet" type="text/css" />
+	{% endaddtoblock %}
+
+	{% addtoblock "css" %}
 		<link href="/media/css/menu.css" media="screen" rel="stylesheet" type="text/css" />
 	{% endaddtoblock %}
 
@@ -23,27 +27,29 @@
 		<link href="/media/css/box.css" media="screen" rel="stylesheet" type="text/css" />
 	{% endaddtoblock %}
 
-	{% addtoblock "css" %}
-		<link href="/media/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-	{% endaddtoblock %}
-
+	
  </head>
 
 <body>
     {% cms_toolbar %}
-      
-    {% placeholder content %}
-
+	{% placeholder content %}
     {% block content %}
 
 		<div id="content">
 
 		<div id="header">
 			<div id="logo">
-				{% placeholder "LogoCabecera" or %} There is no content. {% endplaceholder %}
+				<a href="/"><img alt="" src="/media/img/logo-desk.png" /></a>
 			</div> <!-- end div logo -->
 			<div id = "menu">
 				{% show_menu 0 100 100 100 "menu.html" %}
+			</div>
+
+			<div id="social-media-icons">
+				<a class="social-slide-twitter" href="https://www.twitter.com"></a>
+				<a class="social-slide-linkedin" href="https://www.linkedin.com"></a>
+				<a class="social-slide-facebook" href="https://www.facebook.com"></a>
+				<a class="social-slide-email" href="https://www.email.com"></a>
 			</div>
 		
 		</div> <!-- end div header -->
@@ -84,10 +90,33 @@
 		
 
 		<div id="footer">
-			<div class="content">
-				{% placeholder "footer" or %} There is no content. {% endplaceholder %}
-				
+	
+			<div id= "menu-footer">
+				<ul id="nav-list">
+					<li><a href="/empresa">Empresa</a></li>
+					<li><a href="/cursos">Cursos</a></li>
+					<li><a href="/produto">Software</a></li>
+					<li><a href="/produto">Agenda</a></li>
+					<li><a href="/none">Fale conosco</a></li>
+				</ul>
 			</div>
+			
+			<div id= "autodesk-imgs">
+				<a href="/"> <img alt="View" src="/media/img/reseller01.png" /> </a>
+				<a href="/"> <img alt="Twitter" src="/media/img/Autodesk.jpg" />
+				</a>
+				<a href="/"> <img alt="You Tube" src="/media/img/subscription.png" /></a>
+			</div>
+	
+			<div id = "address-footer">
+				<address>
+  				<strong>Deskgraphics</strong><br>
+  				Rua da Alfândega, 80 sala 302<br>
+  				Centro - Rio de Janeiro<br>
+  				<abbr title="Phone">P:</abbr> (21) 2526-8585
+				</address>
+			</div>
+		
 		</div> <!-- end footer -->
 
 	</div> <!--end content -->

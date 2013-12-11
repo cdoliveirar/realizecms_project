@@ -11,7 +11,7 @@
       
     {% render_block "css" %}
 	{% addtoblock "css" %}
-		<link href="/media/css/aboutus.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/media/css/contato.css" media="screen" rel="stylesheet" type="text/css" />
 	{% endaddtoblock %}
 
 	{% addtoblock "css" %}
@@ -53,19 +53,12 @@
 			<div id="outer1">
 			</div>
 			<div id="outer2">
-				{% placeholder "about_us" or %} There is no content. {% endplaceholder %}
+				
+				
 			</div> <!-- end outer2 -->
 
 			<div id="outer3">
-				<div class="menu_simple">
-					<h3> Sobre Nos</h3>
-					<ul>
-						<li><a href="/service-desk">Service Desk</a></li>
-						<li><a href="/sistemas-gis">Sistema Gis</a></li>
-					</ul>
-				</div>
-
-
+				{% placeholder "locate" or %} There is no content. {% endplaceholder %}
 			</div> <!-- end outer2 -->
 
 		</div> <!-- end wrapper -->

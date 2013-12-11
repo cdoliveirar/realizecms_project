@@ -14,6 +14,10 @@
     {% addtoblock "css" %}
 		<link href="/media/css/product.css" media="screen" rel="stylesheet" type="text/css" />
 	{% endaddtoblock %}
+
+	{% addtoblock "css" %}
+		<link href="/media/css/social.css" media="screen" rel="stylesheet" type="text/css" />
+	{% endaddtoblock %}
 	
 	{% addtoblock "css" %}
 		<link href="/media/css/menu.css" media="screen" rel="stylesheet" type="text/css" />
@@ -23,9 +27,7 @@
 		<link href="/media/css/box.css" media="screen" rel="stylesheet" type="text/css" />
 	{% endaddtoblock %}
 
-	{% addtoblock "css" %}
-		<link href="/media/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
-	{% endaddtoblock %}
+	
 
  </head>
 
@@ -40,24 +42,31 @@
 
 		<div id="header">
 			<div id="logo">
-				{% placeholder "LogoCabecera" or %} There is no content. {% endplaceholder %}
+				<a href="/"><img alt="" src="/media/img/logo-desk.png" /></a>
 			</div> <!-- end div logo -->
 			<div id = "menu">
 				{% show_menu 0 100 100 100 "menu.html" %}
 			</div>
-		
+
+			<div id="social-media-icons">
+				<a class="social-slide-twitter" href="https://www.twitter.com"></a>
+				<a class="social-slide-linkedin" href="https://www.linkedin.com"></a>
+				<a class="social-slide-facebook" href="https://www.facebook.com"></a>
+				<a class="social-slide-email" href="https://www.email.com"></a>
+			</div>
+
 		</div> <!-- end div header -->
 
-			<div id = "carrousel">
-				{% placeholder "carrousel" or %} There is no content.{% endplaceholder %}
-				
-			</div>
+		<div id = "carrousel">
+			{% placeholder "carrousel" or %} There is no content.{% endplaceholder %}
+		</div>
+
+		<div id = "wrapper">
 		
 			<div id="outer1">
 				<div class="xsnazzy">
 					<b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b><b class="xb5"></b><b class="xb6"></b><b class="xb7"></b>
 						<div class="xboxcontent">
-							<h1>Treinamento</h1>
 							{% placeholder "product_list1" or %} There is no content. {% endplaceholder %} 
 						</div>
 					<b class="xb7"></b><b class="xb6"></b><b class="xb5"></b><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b>
@@ -69,7 +78,6 @@
 				<div class="xsnazzy">
 					<b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b><b class="xb5"></b><b class="xb6"></b><b class="xb7"></b>
 						<div class="xboxcontent">
-							<h1>Produtos</h1>
 							{% placeholder "product_list2" or %} There is no content. {% endplaceholder %} 
 						</div>
 					<b class="xb7"></b><b class="xb6"></b><b class="xb5"></b><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b>
@@ -82,19 +90,43 @@
 				<div class="xsnazzy">
 					<b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b><b class="xb5"></b><b class="xb6"></b><b class="xb7"></b>
 						<div class="xboxcontent">
-							<h1>Agenda</h1>
 							{% placeholder "product_list3" or %} There is no content. {% endplaceholder %} 
 						</div>
 					<b class="xb7"></b><b class="xb6"></b><b class="xb5"></b><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b>
 				</div>
 			</div> <!-- end outer2 -->
 		
+		</div> <!-- end wrapper -->
 
 		<div id="footer">
-			<div class="content">
-				{% placeholder "footer" or %} There is no content. {% endplaceholder %}
-				
+	
+			<div id= "menu-footer">
+				<ul id="nav-list">
+					<li><a href="/empresa">Empresa</a></li>
+					<li><a href="/cursos">Cursos</a></li>
+					<li><a href="/produto">Software</a></li>
+					<li><a href="/produto">Agenda</a></li>
+					<li><a href="/none">Fale conosco</a></li>
+				</ul>
 			</div>
+			
+			<div id= "autodesk-imgs">
+				
+				<a href="/"> <img alt="View" src="/media/img/reseller01.png" /> </a>
+				<a href="/"> <img alt="Twitter" src="/media/img/Autodesk.jpg" />
+				</a>
+				<a href="/"> <img alt="You Tube" src="/media/img/subscription.png" /></a>
+			</div>
+	
+			<div id = "address-footer">
+				<address>
+  				<strong>Deskgraphics</strong><br>
+  				Rua da Alfândega, 80 sala 302<br>
+  				Centro - Rio de Janeiro<br>
+  				<abbr title="Phone">P:</abbr> (21) 2526-8585
+				</address>
+			</div>
+		
 		</div> <!-- end footer -->
 
 	</div> <!--end content -->

@@ -1,48 +1,59 @@
-body {background-color:#cccccc; font-size:76%; font-family:"trebuchet MS", verdana, arial, sans-serif; background:#ECECE9; word-wrap:break-word;}
+body {
+    font-family:"arial"; 
+    /*background:#ECECE9; */
+    /*background-color:#cccccc; */
+    background-image: url(../img/sandpaper.png);
+    background-repeat:repeat;
+}
 
 /*#header {background:#ffffff;}*/
 
 #content {
+    background-color: #ffffff;
     margin: 0 auto 45px;
-    padding: 30px 0 186px;
+    padding: 0px 0 50px;
     position: relative;
     width: 960px;
+    /*box-shadow: 10px 10px 5px #888888; */
+    /*box-shadow: 0px -10px 10px -10px #888888; */
+    -moz-box-shadow: 0px 10px 12px 0px #000,
+                    0px -10px 12px 0px #000;
+    -webkit-box-shadow: 0px 10px 12px 0px #000,
+                    0px -10px 12px 0px #000;
+    box-shadow: 0px 10px 12px 0px #000,
+                0px -10px 12px 0px #000;
     
 }
 
 #header {
-    background-color: #fff;
-    height: 102px;
     position: relative;
+    background-color: #fff;
+    height: 135px;
     width: 100%;
-    height: 50px
+    
 }
 
 #logo {
-    bottom: 0;
-    left: 0;
-    position: relative;
-    top: 0;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 30px;
     width: 200px;
-    height: 100px;
+    height: 70px;
 }
 
 #menu {
-    margin-top: -100px;
-    margin-left: 50px;
-}
-
-#carrousel{
-    background-color: #fff;
-    /*width: 65%;
-    margin-left: 150px;*/
-    width: 960px;
-    height: 415px;
-    margin-left: 0px;
+    position: absolute;
+    margin-top: 78px;
+    height: 55px;
+    width: 100%;
 
 }
 
-
+#social-media-icons {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 650px;
+}
 
 #outer1 {float:left; width:33%; background:#ffffff;}
 #outer2 {float:left; width:33%; background:#ffffff;}
@@ -51,14 +62,57 @@ body {background-color:#cccccc; font-size:76%; font-family:"trebuchet MS", verda
 
 /*#wrapper {overflow:hidden; background:#c0c0c0;}*/
 #wrapper {
-    margin: 0 auto 45px;
-    padding: 45px 0 186px;
-    position: relative;
+    position: static;
+    /*margin: 0 auto 45px;
+    padding: 45px 0 186px;*/
+    margin-top: 10px;   
+    margin-left: 10px;   
     width: 900px;
 }
 
+.menu_simple {
+    margin-top: 45px;
+    margin-left: 20px;
+}
 
-#footer {clear:both; background:#455c5a;}
+.menu_simple ul {
+    margin: 0;
+    padding: 0;
+    width:  200px;
+    list-style-type: none;
+}
+
+.menu_simple ul li a {
+    display:block;
+    text-decoration: none;
+    color: #000;
+    padding: 10.5px 11px;
+     background-color: #fff;
+    
+}
+
+.menu_simple ul li a:visited {
+    color: 000;
+}
+ 
+.menu_simple ul li a:hover, .menu_simple ul li .current {
+    color: #0099CC;
+    background-color: #cccccc;
+}
+
+.menu_simple li {
+     border-top: 1px outset grey;
+}
+
+
+
+#footer { 
+    position: static; 
+    clear:both; 
+    background:#ffffff;
+    height: 120px;
+    font-size:12px;
+}
 
 h1 {font-size:20px; margin:0; padding:10px 0; color:#fff;}
 h3 {font-size:18px; margin:0; padding:8px 0;}
@@ -68,3 +122,30 @@ p {font-size:12px; line-height:1.5em; margin:0; padding:5px 0;}
 #header p {color:#000;}
 #footer a {color:#000;}
 #footer a:hover {text-decoration:none;}
+
+#menu-footer {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 280px;
+    color: #EEEEEE;
+
+}
+
+#nav-list li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+#autodesk-imgs{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+
+#address-footer{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 680px;
+}
