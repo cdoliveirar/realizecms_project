@@ -56,8 +56,8 @@ body {
 }
 
 #outer1 {float:left; width:0%; background:#ffffff;}
-#outer2 {float:left; width:68%; background:#ffffff;}
-#outer3 {float:right; width:30%; background:#ffffff; }
+#outer2 {float:left; width:60%; background:#ffffff;}
+#outer3 {float:right; width:40%; background:#ffffff; }
 /*#outer1, #outer2, #outer3 {padding-bottom:32767px; margin-bottom:-32767px;} */
 
 /*#wrapper {overflow:hidden; background:#c0c0c0;}*/

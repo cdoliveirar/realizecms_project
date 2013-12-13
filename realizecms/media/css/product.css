@@ -55,6 +55,19 @@ body {
     margin-left: 650px;
 }
 
+#carrousel{
+    position: static;
+    background-color: #fff;
+    /*width: 65%;
+    margin-left: 150px;*/
+    width: 960px;
+    height: 212px;
+
+    border-width: 1px; 
+    border-style: solid;
+    border-color: #ccc;
+}
+
 #outer1 {float:left; width:33%; background:#ffffff;}
 #outer2 {float:left; width:33%; background:#ffffff;}
 #outer3 {float:right; width:33%; background:#ffffff; }
